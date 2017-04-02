@@ -7,9 +7,7 @@ import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
     directives: [ROUTER_DIRECTIVES]
 })
 export  class NavBarComponent {
-    constructor(private _router: Router) {
-
-    }
+    constructor(private _router: Router) {}
 
     isCurrentRoute(route) {
         return this._router.isRouteActive(this._router.generate(route));
